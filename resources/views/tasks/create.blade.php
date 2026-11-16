@@ -1,0 +1,3 @@
+<x-site-layout title="Create task"><div class="max-w-2xl mx-auto"><a href="{{ route('tasks.index') }}" class="text-sm text-indigo-700">← Back to Task List</a><h1 class="mt-5 text-3xl font-bold">Create task</h1><p class="text-slate-500 mt-2">Give your task a clear plan. All fields are required.</p><form method="POST" action="{{ route('tasks.store') }}" class="mt-7 rounded-2xl bg-white border border-slate-200 p-6 sm:p-8 space-y-6">@csrf
+@include('tasks._form')
+<div class="flex items-center gap-5"><button type="submit" class="rounded-lg bg-indigo-600 px-5 py-3 text-white font-semibold hover:bg-indigo-700">Create task</button><a href="{{ route('tasks.index') }}" class="text-slate-600 underline">Cancel</a></div></form></div></x-site-layout>

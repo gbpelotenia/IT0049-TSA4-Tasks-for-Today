@@ -1,0 +1,1 @@
+<x-site-layout title="My account">@isset($header)<div class="mb-6">{{ $header }}</div>@endisset{{ $slot }}</x-site-layout>

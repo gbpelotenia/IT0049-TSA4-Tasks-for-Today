@@ -1,0 +1,8 @@
+{
+ "version": "2.0.0",
+ "tasks": [
+  {"label":"Laravel: first-time setup","type":"shell","command":"php setup.php","problemMatcher":[]},
+  {"label":"Laravel: run","type":"shell","command":"php artisan serve","isBackground":true,"problemMatcher":[]},
+  {"label":"Laravel: tests","type":"shell","command":"php artisan test","problemMatcher":[]}
+ ]
+}
